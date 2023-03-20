@@ -12,7 +12,7 @@
 			text-decoration: none;
 		}
 		a:visited{
-			color:gray;
+			color:black;
 			text-decoration: none;
 		}
 		a:active{
@@ -21,12 +21,31 @@
 		h1 {
 			font-size: 60px;
 			text-align: center;
+			border-bottom: 1px solid black;
+			padding: 20px;
+			margin: 0;
+		}
+		div{
+			display:grid;
+      grid-template-columns: 150px 1fr;
+		}
+		ol {
+			border-right: 1px black solid;
+			width: 100px;
+			padding: 20px;
+      text-align: center;
+			margin: 0;
+		}
+		body{
+			margin: 0;
 		}
 	</style>
 </head>
 <body>
 	<h1><a href="index.html" id="title">오늘 저녁 뭐 먹을까?</a></h1>
-	<ol>
+	<div class = "grid">
+	<div class = "child">
+	<strong><ol>
     <li><a href="1.html">성북구</a></li>
     <li><a href="2.html">마포구</a></li>
     <li><a href="3.html">성동구</a></li>
@@ -34,8 +53,9 @@
     <li><a href="5.html">강남구</a></li>
     <li><a href="6.html">종로구</a></li>
 		<li><a href="7.html">용산구</a></li>
-	</ol>
-	
+	</ol></strong>
+	</div>
+	<div class = "child">
 	<h2> 6. 종로구</h2>
 	<ul>
 		<li> 만민보리밥</li>
@@ -43,5 +63,6 @@
 		<li> 이층양옥</li>
 		여자친구와 1주년때 예약해서 찾아갔던 익선동 식당이다. 맛이 엄청 특
 	</ul>
+	</div></div>
 </body>
 </html>

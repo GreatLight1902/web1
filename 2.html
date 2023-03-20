@@ -12,7 +12,7 @@
 			text-decoration: none;
 		}
 		a:visited{
-			color:gray;
+			color:black;
 			text-decoration: none;
 		}
 		a:active{
@@ -21,25 +21,31 @@
 		h1 {
 			font-size: 60px;
 			text-align: center;
+			border-bottom: 1px black solid;
+			padding: 20px;
+			margin:0;
 		}
-		div {
+		#grid {
 			display:grid;
 			grid-template-columns: 150px 1fr;
 		}
-		ol {
-			border-right: 2px black solid;
+		#article ol{
+			border-right: 1px black solid;
 			width: 100px;
 			padding: 20px;
       text-align: center;
 			margin: 0;
+		}
+		body {
+			margin:0;
 		}
 	</style>
 </head>
 <body>
 	<h1><a href="index.html" id="title">오늘 저녁 뭐 먹을까?</a></h1>
 	<div id="grid">
-	<div>
-		<ol>
+	<div id="article">
+		<strong><ol>
      <li><a href="1.html">성북구</a></li>
      <li><a href="2.html">마포구</a></li>
      <li><a href="3.html">성동구</a></li>
@@ -47,7 +53,7 @@
      <li><a href="5.html">강남구</a></li>
      <li><a href="6.html">종로구</a></li>
 		 <li><a href="7.html">용산구</a></li>
-	  </ol>
+	  </ol></strong>
   </div>
 
 	<div>
@@ -62,6 +68,6 @@
 		<li>블루쿠치나 </li>
 		망원동 뒷골목에 작게 존재하는 양식 집이다. 내부가 협소해서 웨이팅이 있을 수도 있으나 기다림의 가치를 느낄 수 있을 것이다. 추천 메뉴는 오징어먹물리조또와 스테이크크림파스타로 절대 실패하지 않을 조합이다. 적극 추천!!!<br><br>
 	</ul>
-	</div>
+	</div></div>
 </body>
 </html> 
