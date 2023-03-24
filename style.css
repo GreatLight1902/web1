@@ -1,0 +1,45 @@
+
+body{
+  margin:0;
+  font-family: 'NanumSquareRound';
+}
+
+a{
+  color:inherit
+
+}
+
+a:link{
+  text-decoration: none;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  border-bottom: 1px black solid;
+  padding: 20px;
+  margin:0;
+  color: black
+}
+#contents ol {
+  border-right: 1px black solid;
+  width: 100px;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  line-height: 25px;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 150px 1fr;
+}
+
+@media(max-width:800px){
+  #grid{
+    display:block;
+  }
+  #contents ol {
+  border-right: none;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
